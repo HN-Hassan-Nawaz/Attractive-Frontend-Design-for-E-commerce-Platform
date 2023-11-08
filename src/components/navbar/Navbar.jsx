@@ -1,10 +1,8 @@
 import React from 'react'
-// import { Fragment, useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { WiDaySunny } from "react-icons/wi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useSelector } from 'react-redux';
-// import myContext from '../../context/data/myContext';
 
 function Navbar() {
 
@@ -12,18 +10,16 @@ function Navbar() {
 
     return (
         <div className=''>
-            <div className=' bg-violet-800 w-auto h-24 text-center py-7 text-2xl font-bold'>
+            <div className=' bg-violet-800 w-auto h-24 text-center py-7 text-2xl font-bold ' data-testid="web-name">
                 WELCOME TO PAK ECOMMERES STORE
             </div>
 
             <div className=' shadow-lg w-auto h-20'>
-
-                <h1 className=' font-bold text-3xl px-4 py-2 float-left'>E-Pak Store</h1>
-
+                <h1 className=' font-bold text-3xl px-4 py-2 float-left' data-testid="store-name">E-Pak Store</h1>
 
                 <div className=' float-right my-6'>
                     <div className=' float-left mr-8'>
-                        <Link className=' hover:text-zinc-800' to={"/"}>All Products</Link>
+                        <Link className=' hover:text-zinc-800' to={"/"} data-testid="product-page">All Products</Link>
                     </div>
 
                     <div className=' float-left mr-8'>
